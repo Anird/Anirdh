@@ -1,3 +1,5 @@
 
 // ANIMATION
 AOS.init();
+// preloader
+

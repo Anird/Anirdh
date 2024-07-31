@@ -23,10 +23,20 @@
     />
     <!-- aos-Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+<!-- google-fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Zen+Dots&display=swap" rel="stylesheet">
   </head>
    <body>
+    <!-- preloader start -->
+    <div id="preloader">
+      <div id="preloader-text">Portfolio</div>
+      <div id="loading-spinner"></div>
 
+    </div>
+         <!-- preloader end -->
+    <!-- header -->
     <header class="">
       <div class="container">
         <nav class="navbar navbar-expand-lg naav ">
@@ -52,14 +62,16 @@
         </nav>
       </div>
     </header> 
+        <!-- header-end-->
 
-  <section class="home" id="home">
+
+  <section class="home" id="home">  
     <div class="container">
       <div class="row">
         <div class="col-lg-7 cntnt-col " >
           <div class="home_container">
             <div class="home_content">
-              <h1 class=" h1-text" >HI, I'M <span>ANIRUDH</span> </h2><br>
+              <h1 class=" h1-text" >Hi, I'm <span>ANIRUDH</span> </h2><br>
                 <h3>INNOVATIVE WEB<br> DESIGNER & UI/UX DESIGNER</h3>
 
                 <div class="d-grid gap-2 d-md-block">
@@ -77,20 +89,20 @@
           </div>
         </div>
         <div class="col-lg-5 img-col">
-          <div class="img_div" data-aos="zoom-out-down" data-aos-offset="500"
-          data-aos-duration="5000">
+          <div class="img_div" data-aos="zoom-out-down" data-aos-offset="500" 
+          data-aos-duration="1500">
             <div class="img_container"><img src="assets/images/baann.png" class="img_home  img-fluid" alt="home image "  ></div>
           </div>
         </div>  
       </div>
-    </div>
+    </div> 
 
   </section>
   <section class="about" id="about">
     <div class="container" >
       <div class="row">
         <div class=" col-lg-6 about-sec1 order-1">
-          <div class="heading_container">
+          <div class="heading_container"  data-aos="flip-left" data-aos-duration="1000">
             <h2>ABOUT ME </h2>
             <P>Hello, I'm Anirudh, a passionate Web Designer dedicated to transforming digital visions into stunning, user-friendly websites. With one year of experience, I specialize in creating responsive, engaging, and visually striking web solutions.
             <div>
@@ -98,7 +110,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 about-sec2 order-2">
+        <div class="col-lg-6 about-sec2 order-2" data-aos="flip-right" data-aos-duration="1000">
           <div class="about_image ">
             <img src="assets/images/about-1.png" alt="about" class="img_about">
           </div>
@@ -309,7 +321,7 @@
                   <h3>Contact detail</h3>
                   <p>Let's connect and turn ideas into reality </p>
               </div>
-              <div class="content">
+              <div class="content" data-aos="zoom-in-right" data-aos-duration="2000">
                   <!-- Info-1 -->
                   <div class="info">
                       <i class="fas fa-mobile-alt"></i>
@@ -337,7 +349,7 @@
           <div class="col-md-7">
 
               <div class="">
-                <img src="assets/images/contact-.jpg" class="c-img" alt="">
+                <img src="assets/images/contact-.jpg" class="c-img" alt="contact image">
               </div>
           </div>
       </div>
@@ -357,6 +369,23 @@
 
 
     <!-- bootstrap-5 -->
+    <script>
+      window.addEventListener('load', function() {
+        // Minimum display time for the pre-loader (in milliseconds)
+        const minDisplayTime = 2000; // 2 seconds
+    
+        // Record the time when the page started loading
+        const loadTime = performance.now();
+    
+        // Calculate how long the pre-loader should still be displayed
+        const displayTime = Math.max(minDisplayTime - loadTime, 0);
+    
+        // Hide the pre-loader after the calculated display time
+        setTimeout(function() {
+          document.body.classList.add('loaded');
+        }, displayTime);
+      });
+    </script>
      <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
