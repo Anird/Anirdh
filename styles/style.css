@@ -85,18 +85,28 @@ body {
 .navbar a {
     color:var(--text-color);
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 600;
     font-family: 'Segoe UI', sans-serif;
     margin-left: 20px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
     color: #fff !important;
-    background-color: #3B2B68;
-    border-radius: 16px;
+    font-weight: 800;
+    overflow: hidden;
+    padding-left: none;
+
 
 }
-
+.navbar-toggler-icon {
+    color: var(--text-color);
+    border: none!important;
+    font-size: 30px;
+    font-weight: 600;
+}
+.navbar-toggler:focus{
+    box-shadow: none!important;
+}
 .navbar a :hover {
     background-color: #E33954;
 }
@@ -169,7 +179,7 @@ body {
 .home .btn:hover {
     background: linear-gradient(to right, #6b21bc, #3B2B68);
     color: #fff;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     cursor: pointer;
 
 
@@ -184,17 +194,20 @@ body {
 .social-media {
     padding-top: 20px;
 }
-
+.social-media i{
+    font-size: 30px;
+    padding-left:10px;
+}
 .mail {
 
-    color: #6b21bc;
-    font-size: 30px;
+    color:var(--text-color);
     padding-top: 30px;
     padding-right: 10px;
+    font-weight: 900;
 }
 
 .mail:hover {
-    color: #fff;
+    color: #3b2b68;
 }
 
 
@@ -293,7 +306,6 @@ body {
 .about .btn:hover {
     background: linear-gradient(to right, #6b21bc, #3B2B68);
     color: #fff;
-    border: 1px solid #fff;
 
 }
 
@@ -421,11 +433,12 @@ body {
 
 .portfolio .nav-pills .nav-link.active {
     background: #3B2B68 !important;
+    border: 1px solid #6b21bc;
+
 }
 
 #portfolio .nav-pills .nav-link:hover {
     color: #fff !important;
-    border: 1px solid #6b21bc;
 
 
 }
@@ -1197,6 +1210,9 @@ footer span {
         display: flex;
         justify-content: left;
         align-items: center;
+        width: 90%;
+        height: auto;
+        /* gap: 10px; */
 
     }
 
