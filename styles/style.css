@@ -584,6 +584,18 @@ body {
 .buton {
     padding-top: 30px;
 }
+.contact iframe{
+    border-radius: 10px;
+    width: 100%;
+    transition:filter 0.3s ease-in-out;
+    color: #161922;
+    cursor: pointer;
+    
+
+}
+.contact iframe:hover{
+    filter: blur(0.8px);
+}
 
 
 
