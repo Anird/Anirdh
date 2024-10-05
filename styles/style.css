@@ -193,11 +193,11 @@ body.loaded #preloader {
 }
 
 .home .btn:hover {
-    /* background: linear-gradient(to right, #6b21bc, #3B2B68); */
     background-color: #fff;
-    color:#1e1e1e;
+    color: #1e1e1e;
     /* border: 1px solid #fff; */
     cursor: pointer;
+    border: 3px solid linear-gradient(to right, #6b21bc, #3B2B68);
 
 
 }
@@ -324,8 +324,10 @@ body.loaded #preloader {
 
 .about .btn:hover {
     background-color: #fff;
-    color:#1e1e1e;
+    color: #1e1e1e;
     cursor: pointer;
+    border: 3px solid  linear-gradient(to right, #6b21bc, #3B2B68); 
+
 }
 
 
@@ -1469,4 +1471,5 @@ footer span {
     }
 
 }
+
 /* Inner Page */
