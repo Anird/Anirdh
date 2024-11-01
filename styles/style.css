@@ -50,7 +50,9 @@ body {
     background-image: url(../assets/images/bg-2.jpg);
     background-size: cover;
 }
-
+.section {
+    padding: 40px 20px; /* 40px top and bottom, 20px sides */
+}
 /* preloader start */
 /* Pre-loader styles */
 #preloader {
@@ -514,7 +516,7 @@ body.loaded #preloader {
 
 /* contact */
 .contact {
-    padding: 50px 0;
+    padding: 60px 0;
     overflow: hidden;
 
 }
@@ -588,7 +590,8 @@ body.loaded #preloader {
 
 }
 
-.contact .btn {
+.send-btn {
+    background: transparent;
     color: var(--text-color);
     padding: 10px 20px;
     border-radius: 20px;
@@ -601,7 +604,7 @@ body.loaded #preloader {
 
 }
 
-.contact .btn:hover {
+.send-btn:hover {
     background-color: #fff;
     color: #1e1e1e;
     cursor: pointer;
@@ -1478,5 +1481,7 @@ footer span {
     }
 
 }
+
+
 
 /* Inner Page */
