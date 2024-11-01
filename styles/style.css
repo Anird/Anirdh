@@ -15,21 +15,37 @@
     font-weight: 100;
     font-style: italic;
 }
-
+.fav-icon img { 
+    
+}
 :root {
     --text-color: #cccccc;
+    --primary-color:#00A2FF;
 }
 
 @import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
 
 
-.m-heading {
+.m-heading  span {
     color: #fff;
-    font-size: 35px;
     font-family: "Zen Dots", sans-serif;
     font-weight: 600;
 }
+.m-heading .span-1{
+    font-size: 50px;
+    font-weight: 900;
 
+}
+.m-heading .span-2{
+    font-size: 40px;
+    color: var(--primary-color);
+    font-weight: 900;
+
+}
+.m-heading .span-3{
+    font-size: 40px;
+    font-weight: 900;
+}
 body {
     background-image: url(../assets/images/bg-2.jpg);
     background-size: cover;
@@ -101,13 +117,13 @@ body.loaded #preloader {
     font-weight: 600;
     font-family: 'Segoe UI', sans-serif;
     margin-left: 20px;
+    transition:  0.3s ease; /* Smooth transition */
+  border-bottom: 1px solid transparent; /* Invisible border to set underline position */
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
     color: #fff !important;
-    font-weight: 800;
-    overflow: hidden;
-    padding-left: none;
+    border-bottom: 1px solid currentColor;
 
 
 }
@@ -467,7 +483,7 @@ body.loaded #preloader {
 
 
 .portfolio h2 {
-    text-align: center;
+    text-align: left;
     font-size: 25px;
     color: var(--text-color);
     font-weight: 600;
@@ -504,7 +520,7 @@ body.loaded #preloader {
 }
 
 .contact .heading h2 {
-    text-align: center;
+    text-align: left;
     color: var(--text-color);
     font-weight: 500;
     font-family: 'Segoe UI', sans-serif;
@@ -514,18 +530,7 @@ body.loaded #preloader {
 
 
 
-.contact .heading p {
 
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.7;
-    color: #fff;
-    margin: 20px 0 60px;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    text-transform: capitalize;
-
-}
 
 .c-img {
     width: 100%;
@@ -584,21 +589,23 @@ body.loaded #preloader {
 }
 
 .contact .btn {
-    background-color: #E33954;
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 10px;
-    font-weight: 300;
+    color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 500;
     font-size: 18px;
     font-family: 'Segoe UI', sans-serif;
+    border: 3px solid #b6b7bb;
+
 
 
 }
 
 .contact .btn:hover {
-    background-color: #161922;
-    color: #fff;
-    border: 1px solid #fff;
+    background-color: #fff;
+    color: #1e1e1e;
+    cursor: pointer;
+    border: 3px solid linear-gradient(to right, #6b21bc, #3B2B68);
 
 }
 
@@ -621,9 +628,9 @@ body.loaded #preloader {
 }
 
 
-
-
-
+.form-control{
+    border-radius: var(--primary-color);
+}
 
 .footer_div {
     text-align: center;
